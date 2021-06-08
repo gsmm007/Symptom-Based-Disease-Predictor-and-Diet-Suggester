@@ -1,1 +1,1 @@
-# Symptom-Based-Disease-Predictor-and-Diet-Siggester
+# Symptom-Based-Disease-Predictor-and-Diet-Suggester
