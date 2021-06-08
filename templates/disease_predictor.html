@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Disease Predictor</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="static/css_new/opensans-font.css">
+	<link rel="stylesheet" type="text/css" href="static/css_new/montserrat-font.css">
+	<link rel="stylesheet" type="text/css" href="static/fonts_new/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="static/css_new/style.css"/>
+</head>
+<body>
+	<div class="page-content">
+		<div class="wizard-heading"></div>
+		<div class="wizard-v7-content">
+			<div class="wizard-form">
+		        <form class="form-register" action="/your-disease2" method="post">
+		        	<div id="form-total">
+			            <!-- SECTION 3 -->
+			            <h2>
+			            	<p class="step-icon"><span>*</span></p>
+			            	<div class="step-text">
+			            		<span class="step-inner-1">Disease Predictor</span>
+			            		<span class="step-inner-2">Step 1</span>
+			            	</div>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Predictor Wizard</h3>
+								</div>
+								<div class="form-row">
+			                		<div class="form-holder form-holder-2">
+			                			<div class="content-inner">
+			                				<p>Please select the relevant symptoms</p>
+									
+										{% for symp in found_symptoms %}
+			                				<div class="form-checkbox">
+												<label class="container">
+													<p>{{ symp }}</p>
+												  	<input type="checkbox"  value = "{{ symp }}" name="checkbox">
+												  	<span class="checkmark"></span>
+												</label>
+									</div>
+										{% endfor %}
+
+
+										
+			                			</div>
+			                		</div>
+			                	</div>
+							</div>
+
+			            </section>
+		        	</div>
+		        </form>
+			</div>
+		</div>
+	</div>
+	<script src="static/js_new/jquery-3.3.1.min.js"></script>
+	<script src="static/js_new/jquery.steps.js"></script>
+	<script src="static/js_new/main.js"></script>
+</body>
+</html>
